@@ -1,0 +1,44 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+        display: inline-block;
+        border: none;
+        font-size: 2vw;
+        padding: 1em 2em;
+        margin: 0;
+        text-decoration: none;
+        background: #0069ed;
+        color: #ffffff;
+        font-family: sans-serif;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out,
+            transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        &:hover,
+        &:focus {
+            background: #0053ba;
+        }
+
+        &:focus {
+            outline: 1px solid #fff;
+            outline-offset: -4px;
+        }
+
+        &:active {
+            transform: scale(0.99);
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
